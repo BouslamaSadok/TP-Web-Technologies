@@ -1,8 +1,23 @@
-<%@ page contentType="text/html; charset=UTF-8" import="java.util.Date" %>
-<html><body>
-<%
-    out.println("<p>Heure actuelle : " + new Date() + "</p>");
-    out.println("<p>request.getRemoteHost() : " + request.getRemoteHost() + "</p>");
-    out.println("<p>Adresse IP du serveur : " + request.getLocalAddr() + "</p>");
-%>
-</body></html>
+
+<%@ page contentType="text/html;charset=UTF-8" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scriptlet JSP</title>
+</head>
+<body>
+
+    <h1>Scriptlet Example</h1>
+
+    <%
+        java.util.Date currentDate = new java.util.Date();
+        String host = request.getRemoteHost();
+    %>
+
+    <p>Current time: <%= currentDate %></p>
+
+    <p>Server's IP address: <%= host %></p>
+
+</body>
+</html>

@@ -1,4 +1,11 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
-<html><body>
-<h1>Nombre aléatoire : <%= Math.random() %></h1>
-</body></html>
+<!DOCTYPE html<
+<html>
+    <head>
+    <title>Expression JSP</title>
+</head>
+<body>
+    <h1>My First JSP</h1>
+    <p>Random number:</p>
+    <%=Math.random()%>
+</body>
+</html>

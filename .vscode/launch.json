@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Lab1 - MVC",
+            "type": "pwa-chrome",
+            "request": "launch",
+            "url": "http://localhost:8081/Lab1/index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

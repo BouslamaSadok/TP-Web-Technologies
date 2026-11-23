@@ -13,6 +13,12 @@ public class ShowSession extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession();
+        Integer activeSessions = (Integer) getServletContext()
+        .getAttribute("activeSessions");
+
+        if (activeSessions == null) {
+            activeSessions = 0;
+        }
 
         Integer visits = (Integer) session.getAttribute("visits");
 
